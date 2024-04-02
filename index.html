@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <div id="hero">
+      <div class="navbar">
+        <img src="image/bike4.png" alt="" />
+        <div class="user">
+          <button type="button">explore</button>
+          <img src="img/1.png" alt="" />
+        </div>
+      </div>
+      <div class="contenar">
+        <div class="info">
+          <h1>Bikers-point</h1>
+          <p>
+            It is a collection of the bikes which is avaiable in the world.
+            <br />
+          </p>
+          <a href="home.html"><button>view website</button></a>
+        </div>
+      </div>
+      <div class="slider">
+        <img src="image/right.webp" alt="" id="prev" />
+        <div class="preview">
+          <img src="image/2a.jpg" alt="" class="active thumbnail" />
+          <img src="image/2c.jpg" alt="" class="thumbnail" />
+          <img src="image/2b.jpg" alt="" class="thumbnail" />
+          <img src="image/2d.jpg" alt="" class="thumbnail" />
+        </div>
+        <img src="image/left.png" alt="" id="next" />
+      </div>
+    </div>
+    <script>
+      var prev = document.getElementById("prev");
+      var next = document.getElementById("next");
+      var thumbnail = document.getElementsByClassName("thumbnail");
+      var hero = document.getElementById("hero");
+
+      var backgroundImage = new Array(
+        "image/2a.jpg",
+        "image/2c.jpg",
+        "image/2b.jpg",
+        "image/2d.jpg"
+      );
+      let i = 0;
+      next.onclick = function () {
+        if (i < 4) {
+          hero.style.backgroundImage = 'url("' + backgroundImage[i + 1] + '")';
+          thumbnail[i + 1].classList.add("active");
+          thumbnail[i].classList.remove("active");
+          i++;
+        }
+      };
+      prev.onclick = function () {
+        if (i > 0) {
+          hero.style.backgroundImage = 'url("' + backgroundImage[i - 1] + '")';
+          thumbnail[i - 1].classList.add("active");
+          thumbnail[i].classList.remove("active");
+          i++;
+        }
+      };
+    </script>
+  </body>
+</html>

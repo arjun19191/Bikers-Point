@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <div class="contenar">
+      <h1>Sign In</h1>
+      <form action="" id="forminfo" method="home.html">
+        <div id="sub-content">
+          <div>
+            <label for="">Name</label> <br /><input
+              type="text"
+              id="name"
+              required
+            />
+          </div>
+          <div>
+            <label for="">Address</label> <br />
+            <input type="text" id="school" size=" 33" required />
+          </div>
+          <div>
+            <label for="">email</label> <br />
+            <input type="email" id="mail" required />
+          </div>
+          <div>
+            <label for="">Password</label> <br />
+            <input type="password" id="pass" required />
+          </div>
+          <button id="first">submit</button>
+        </div>
+      </form>
+    </div>
+    <script>
+      const fname = document.getElementById("name");
+      const address = document.getElementById("school");
+      const email = document.getElementById("email");
+      const password = document.getElementById("pass");
+      const submit = document.getElementById("first");
+      const form = document.getElementById("forminfo");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,662 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+ 
+}
+.container{
+    max-width: 90%;
+    margin: auto;
+}
+.scontainer{
+    max-width: 80%;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex1{
+    display: flex;
+    justify-content: space-between
+}
+
+/*~~~~Header Section~~~~~~~*/
+nav{
+    height: 15vh;
+    line-height: 15vh;
+    background-color: #f5e1b1;
+    text-align: center;
+    color: black;
+}
+
+.logo img{
+    margin-left: -76px;
+    margin-top: 0px;
+    height: 72%;
+    position: relative;
+}
+
+.nav .menu ul li a {
+    height: 30px; /* Set the height for all <a> elements */
+    background-color: #f5e1b1; /* Set your desired background color */
+    padding: 5px 10px; /* Adjust padding to create space around the text */
+    border-radius: 2px; /* Add border-radius for rounded corners */
+    display: inline-block; /* Ensure each link takes only the necessary space */
+    line-height: 20px; /* Adjust line height to center text vertically */
+    margin-right: 10px; /* Add spacing between menu items */
+    text-shadow: 0 2px 4px rgba(0.2, 0, 0,0.2);
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+} 
+
+/*Style the menu items on hover */
+ .nav ul li a:hover {
+    background-color: #040404;
+}
+
+.nav ul li:hover a {
+    color: whitesmoke;
+}
+
+
+nav ul{
+    width: 100%;
+    display: flex;
+    list-style: none;
+  
+}
+
+nav ul li{
+    margin-left: 20px;
+    font-size: 14px;
+    padding: 10px;
+
+}
+
+nav ul li:hover a {
+    transform: scale(1.2); /* Scale the button to 110% size */
+    transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+.media-button i{
+    font-size: 20px;
+    display: none;
+}
+
+.account i{
+    color: #37b234;
+    margin: 30px 20px 0 0;
+   
+}
+.account a {
+    text-decoration: none; 
+    padding: 5px;
+    margin: 0 5px 0 0;
+    color: black;
+   
+}
+
+ @media only screen and (max-width:768px){
+
+    .logo img {
+        margin-left: 10px; /* Adjust the left margin for smaller screens */
+        margin-top: 10px; /* Adjust the top margin for smaller screens */
+        height: 50px; /* Set a fixed height for the logo on smaller screens */
+        position: absolute; /* Position the logo absolutely within its container */
+    }
+
+    .main_list{
+        overflow: hidden;
+        height: 0;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top:10%;
+        padding: 0 0 0 40px;
+        transition: 0.55s;
+        z-index: 2;
+    }
+    nav .show_list{
+        height: 250px;
+        background: white;
+        z-index: 2;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav ul li a{
+        line-height: 40px;
+        display: table;
+    }
+    .media-button i{
+        display: block;
+        margin-top: 20px;
+        background: #ff6301;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+        
+    }
+    .account{
+        display: none;
+        margin: 10px;
+    }
+} 
+
+/*~~~~Header Section~~~~~~~*/
+
+
+.left{
+    width:35%;
+}
+
+.right{
+    width:65%;
+    overflow-x: hidden;
+}
+
+button{
+    padding: 15px 50px;
+    border: none;
+    border-radius: 50px;
+    margin: 20px 20px 0 0;
+    background: #ec8925;
+    color:white;
+}
+
+.btn1{
+    border: 2px solid white;
+}
+
+.btn2{
+    background: white;
+    color: black;
+}
+.home{
+    position:relative;
+    color: white;
+}
+.home .left{
+    padding: 150px 0 0 65px;
+    margin:50px ;
+}
+.home .right{
+    margin-top: 10px;
+}
+.home::after{
+    content: '';
+    position: absolute;
+    top:0;
+    /* background-image: url('..image/color.jpg..'); */
+    background-color: #434241;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.home h2{
+    font-size: 50px;
+    margin: 20px 0 20px 0;
+}
+.home {
+    position: relative; /* Ensure relative positioning */
+}
+
+.brand_logo {
+    position: absolute; /* Position the logo absolutely */
+    top: 10%; /* Position the logo vertically at 50% from the top */
+    left: 50%; /* Position the logo horizontally at 50% from the left */
+    transform: translate(-50%, -50%); /* Center the logo */
+    z-index: 1; /* Ensure the logo appears above other content */
+}
+
+.brand_logo img {
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+
+
+/*~~~~~Home Section~~~~~~~~*/
+
+
+
+/*~~~~~Home~~~~~~~~*/
+/*~~~~~Latest~~~~~~~~*/
+
+.top{
+    margin-top: 100px;
+}
+.mtop{
+    margin-top: 50px;
+}
+
+.heading{
+    text-align: center;
+    position: relative;
+    margin-bottom: 120px;
+}
+
+.heading h1{
+    font-size: 40px;
+    font-weight: 400;
+    background-color: #434241;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-family: 'roboto', sans-serif;
+    border: 5px solid #ec8925;
+}
+
+.heading button{
+    padding: 15px 80px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 42%;
+    font-size: 15px;
+}
+
+.heading .lines{
+    position: relative;
+    width: 100%;
+}
+
+.heading .line{
+    border: 1px solid #e3e3e3;
+    width: 45%;
+    height: 3px;
+    border-left: none;
+    position: absolute;
+    left: 0;
+    top: 43px;
+    z-index: -1;
+}
+ 
+.heading .line i{
+    position: absolute;
+    right: -1px;
+    top: -7px;
+    color: white;
+}
+
+.heading .line2{
+    right: 0;
+    left: 59%; 
+    border-radius: none;
+}
+
+.heading .line2 i{
+    left: -100%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.latest .scontainer{
+    padding: 50px;
+    text-align: center;
+}
+
+.latest .box{
+    background: #f9f9f9;
+    padding: 30px;
+    border: 2px solid #e0d8cf;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.latest .box:hover{
+    border: 2px solid #ec8925;
+    cursor: pointer;
+}
+
+.latest .img{
+    position: relative;
+}
+
+.latest .img .flex1{
+    width: 100%;
+    position:absolute;
+    top: 0;
+}
+
+.latest .img label {
+    width:50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    color: white;
+    background: #37b234;
+    text-align: center;
+}
+
+.latest .img i {
+    color:#37b234;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.latest .details h2{
+    font-weight: 400;
+    color: #37b234;
+    margin: 20px 0 20px 0;
+}
+
+.latest .details h2 span{
+    text-decoration: line-through;
+    font-size: 14px;
+    color: gray;
+}
+
+.latest .details button{
+    margin: 0;
+    margin-top: 20px;
+}
+
+/*~~~~~Latest~~~~~~~~*/
+
+
+/*~~~~~Home~~~~~~~~*/
+
+
+
+
+
+
+
+
+/*~~~~~Responsive part~~~~~~~~*/
+@media only screen and (max-width:768px){
+
+/*~~~~~Home~~~~~~~~*/
+.home {
+    background-color: #434241; /* Set the desired background color */
+    padding: 50px; /* Add padding to maintain space between content and edges */
+    z-index: -1;
+}
+.button button {
+    padding: 10px 30px; /* Reduce padding for smaller screens */
+    margin: 10px 0; /* Add margin to separate buttons vertically */
+}
+
+/* Ensure buttons stay within the home section */
+.home .button {
+    margin-top: 20px; /* Adjust top margin to create space between buttons and other content */
+}
+
+.home .content{
+    flex-direction: column;
+}
+
+.left, .right{
+    width: 100%;
+}
+
+.home .left{
+    padding: 50px 100px 50px 50px;
+}
+
+.home::after{
+    background-size:cover;
+    height: 70vh;
+}
+
+.ani_image img{
+    width: 100%;
+    height: 100%;
+}
+/*~~~~~Home~~~~~~~~*/
+/*~~~~~Latest~~~~~~~~*/
+.heading button{
+    left: 30%;
+}
+
+.heading .line{
+    display: none;
+}
+
+.grid{
+    grid-template-columns: repeat(2, 1fr);
+}
+/*~~~~~Latest~~~~~~~~*/
+
+}
+@media only screen and (max-width:511px){
+    .home::after{
+        height: 100vh;
+    }
+    
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .heading h1{
+        font-size: 35px;
+    }
+
+    .heading button{
+        left: 20%;
+    }
+
+    .latest .scontainer{
+        padding: 0;
+    }
+}
+
+/*~~~~~~~ani-image section~~~~~~~*/
+@keyframes floatAnimation {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-20px); }
+    100% { transform: translateX(0); }
+}
+
+.ani_image img {
+    animation: floatAnimation 4s ease-in-out infinite;
+}
+
+
+
+
+/*~~~~~~~Box image section~~~~~~~*/
+
+.latest .box {
+    /* Other styles... */
+    display: flex;
+    flex-direction: column;
+}
+
+.latest .img {
+    /* Other styles... */
+    flex-grow: 1; /* Allow the image to grow to fill the remaining space */
+}
+
+
+/*~~~~~~~Box image section~~~~~~~*/
+
+.latest .box {
+    /* Other styles... */
+    display: flex;
+    flex-direction: column;
+}
+
+.latest .img {
+    /* Other styles... */
+    flex-grow: 1; /* Allow the image to grow to fill the remaining space */
+}
+
+
+/* Adjust the logo positioning */
+.logo {
+    position: relative; /* Ensure the container is positioned relatively */
+    left: 10px; /* Adjust the left position of the logo */
+    top: 0; /* Ensure the logo stays at the top */
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    .container {
+        position: relative; /* Ensure the container is positioned relatively */
+    }
+
+    .logo {
+        position: absolute; /* Position the logo absolutely within its container */
+        left: 10px; /* Adjust the left position of the logo */
+        top: 10px; /* Adjust the top position of the logo */
+    }
+}
+
+
+/* Apply transition to the box for smooth animation */
+.latest .box {
+    background: #f9f9f9;
+    padding: 30px;
+    border: 2px solid #e0d8cf;
+    border-radius: 10px;
+    transition: transform 0.3s ease, z-index 0.3s ease;
+    position: relative; /* Ensure proper stacking */
+    z-index: 1; /* Set initial z-index */
+}
+
+/* Define the transformation and z-index when hovering over the box */
+.latest .box:hover {
+    transform: scale(1.1); /* Scale the box to 110% size */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add a shadow for a pop-up effect */
+    z-index: 2; /* Move the box in front of other elements */
+}
+
+
+/* Apply transition to the button for smooth animation */
+.latest .box button {
+    padding: 15px 50px;
+    border: none;
+    border-radius: 50px;
+    background: #ec8925;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Define the transformation when hovering over the button */
+.latest .box button:hover {
+    transform: scale(1.1); /* Scale the button to 110% size */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add a shadow for a pop-up effect */
+}
+
+/* Apply transition to the buttons for smooth animation */
+.button .btn1,
+.button .btn2 {
+    padding: 15px 50px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Define the background color for the "Learn More" button */
+.button .btn1 {
+    background: #ec8925; /* Define the background color for the "Learn More" button */
+}
+
+/* Define the background color for the "Buy Now" button */
+.button .btn2 {
+    background: #ffffff; /* Define the background color for the "Buy Now" button */
+    color: black;
+}
+
+/* Define the transformation when hovering over the "Learn More" button */
+.button .btn1:hover {
+    transform: scale(1.1); /* Scale the button to 110% size */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add a shadow for a pop-up effect */
+}
+
+/* Define the transformation when hovering over the "Buy Now" button */
+.button .btn2:hover {
+    transform: scale(1.1); /* Scale the button to 110% size */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add a shadow for a pop-up effect */
+}
+
+/* Style the container as a perfect circle with a green background */
+.heart-container {
+    display: inline-flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 28px; /* Set the width and height to create a perfect circle */
+    height: 28px;
+    border-radius: 50%; /* Make it a perfect circle */
+    background-color: #37b234; /* Add a green background color */
+    cursor: pointer; /* Change cursor to pointer on hover to indicate interactivity */
+}
+
+/* Set the default color of the heart icon to white */
+.heart-container .fas.fa-heart {
+    color: white;
+    transition: color 0.3s; /* Add a transition for smoother color change */
+}
+
+/* Change the color of the heart icon to green on click */
+.heart-container.clicked .fas.fa-heart {
+    color: #ff6301;
+}
+
+
+/*~~~~~~~~Drop down menu for BRAND~~~~~~~~~~~*/
+/* Dropdown button */
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 4;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #0026ff;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Adjust dropdown position */
+  .dropdown-content {
+    top: 100%;
+    left: 0;
+  }
+  
+/*~~~~~~~~Drop down menu for BRAND~~~~~~~~~~~*/
